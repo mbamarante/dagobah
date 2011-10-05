@@ -1,0 +1,17 @@
+[0.0=0 1.0=1 2.0=1 3.0=2 4.0=2 5.0=0 6.0=0 7.0=5 8.0=1 9.0=0 10.0=0 11.0=7 12.0=0 13.0=5 14.0=4 15.0=4]:135:280.0
+**********
+
+TOTALTIME=135
+CYCLES=16
+MSGS=65
+AVGMSGSIZE=116.18461538461538
+
+topo = 35
+topo max size = 87
+topo avg size = 55.8
+util = 15
+util max size = 1572
+util avg size = 347.53333333333336
+value = 15
+value max size = 35
+value avg size = 25.733333333333334

@@ -1,0 +1,17 @@
+[0.0=2 1.0=2]:17:20.0
+**********
+
+TOTALTIME=17
+CYCLES=4
+MSGS=4
+AVGMSGSIZE=24.0
+
+topo = 2
+topo max size = 31
+topo avg size = 26.5
+util = 1
+util max size = 25
+util avg size = 25.0
+value = 1
+value max size = 18
+value avg size = 18.0
