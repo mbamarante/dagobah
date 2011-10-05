@@ -1,0 +1,25 @@
+## mysqldump ##'
+mysqldump -u root -p --where="odsize=20000 and simulation like '%poa.u_%'" itsumo trvtime > ~/u_20k.sql
+mysqldump -u root -p --where="odsize=20000 and simulation like '%poa.nu_%'" itsumo trvtime > ~/nu_20k.sql
+mysqldump -u root -p --where="odsize=25000 and simulation like '%poa.u_%'" itsumo trvtime > ~/u_25k.sql
+mysqldump -u root -p --where="odsize=25000 and simulation like '%poa.nu_%'" itsumo trvtime > ~/nu_25k.sql
+mysqldump -u root -p --where="odsize=40000 and simulation like '%poa.u_%'" itsumo trvtime > ~/u_40k.sql
+mysqldump -u root -p --where="odsize=40000 and simulation like '%poa.nu_%'" itsumo trvtime > ~/nu_40k.sql
+
+mysql -u root -p --database itsumo < ~/u_20k.sql 
+mysql -u root -p --database itsumo < "RENAME TABLE trvtime TO trvtime_u20000;"
+
+mysql -u root -p --database itsumo < ~/nu_20k.sql 
+mysql -u root -p --database itsumo < "RENAME TABLE trvtime TO trvtime_nu20000;"
+
+mysql -u root -p --database itsumo < ~/u_25k.sql 
+mysql -u root -p --database itsumo < "RENAME TABLE trvtime TO trvtime_u25000;"
+
+mysql -u root -p --database itsumo < ~/nu_25k.sql 
+mysql -u root -p --database itsumo < "RENAME TABLE trvtime TO trvtime_nu25000;"
+
+mysql -u root -p --database itsumo < ~/u_40k.sql 
+mysql -u root -p --database itsumo < "RENAME TABLE trvtime TO trvtime_u40000;"
+
+mysql -u root -p --database itsumo < ~/nu_40k.sql
+mysql -u root -p --database itsumo < "RENAME TABLE trvtime TO trvtime_nu40000;"
