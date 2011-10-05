@@ -1,0 +1,9 @@
+Algorithm Adopt
+Problem MaxCOP (Tree, depth = 25)
+TOTALTIME=6.317
+CYCLES=4466.346153846154
+MSGS=2782
+AVGMSGSIZE=65.79978432782171
+ 
+FinalSolQlty 0
+BestSolQlty 0
